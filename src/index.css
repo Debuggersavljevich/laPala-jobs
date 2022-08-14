@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(180, 14%, 20%);
+    cursor: pointer;
+  }
+  .secondary-heading {
+    font-weight: 500;
+    color: #5DA5A4;
+  }
+  .header-container, .new-tag {
+      background-color: #5DA5A4;
+  }
+  .tags {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 8px;
+  }
+  .tag {
+    font-size: 12px;
+    color: #5DA5A4;
+    background-color: #effafa;
+    font-weight: 500 !important;
+    cursor: pointer;
+  }
+  .featured-item {
+    border-left: 3px solid #5DA5A4;
+    
+  }
+  .bg-white {
+    background-color: #fff;
+  }
+  span {
+      font-size: 11px;
+  }

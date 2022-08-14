@@ -1,0 +1,31 @@
+{
+  "jobs": [
+    {
+      "empresa": "Microsoft",
+      "puesto": "Ingeniero en Datos",
+      "modalidad": "Remoto",
+      "descripcion": "testing",
+      "email": "sbogosavljevich@gmail.com",
+      "location": "Junin BA",
+      "id": 1
+    },
+    {
+      "empresa": "Tesla",
+      "puesto": "Ingeniero Mecánico",
+      "modalidad": "Presencial",
+      "descripcion": "Se busca un ingeniero mecánico con varios años de experiencia en el rubro automotor",
+      "email": "sbogosavljevich@gmail.com",
+      "location": "Junín, BA",
+      "id": 2
+    },
+    {
+      "empresa": "Microsoft",
+      "puesto": "Fullstack Engineer",
+      "modalidad": "Remoto",
+      "descripcion": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3",
+      "email": "sbogosavljevich@gmail.com",
+      "location": "Junín, BA",
+      "id": 3
+    }
+  ]
+}
