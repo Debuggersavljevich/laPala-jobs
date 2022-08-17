@@ -17,12 +17,20 @@ import { Tabs,
     ModalBody,
     ModalCloseButton,
     useDisclosure,
-    useToast
+    useToast,
+    InputGroup,
+    Stack,
+    InputLeftElement,
+    Input,
+    Img,
+    
+    
+
     
         } from '@chakra-ui/react'
-import { Link } from "react-router-dom"
 import {Formik, Form, Field, ErrorMessage} from 'formik'
 import * as Yup from 'Yup'
+import Lupa from './Lupa'
 
 const Header = () => {
     
@@ -87,6 +95,8 @@ const Header = () => {
             
         </div>
         
+      
+
     <div className="flex justify-center mt-16 font-dosis text-2xl text-center bg-indigo-200 p-2 rounded-3xl">
 
             
@@ -103,10 +113,10 @@ const Header = () => {
             <p>Adjuntá el cv y, ¡Listo!</p>
             </TabPanel>
             <TabPanel>
-            <p>Apretá en Postular empleo y llená el formulario</p>
+            <p>Solo llená el formulario</p>
             </TabPanel>
             <TabPanel>
-            <p>¡Sí! No guardamos tu CV ni ningún dato</p>
+            <p>No guardamos tu CV ni ningún dato</p>
             </TabPanel>
         </TabPanels>
         </Tabs>
@@ -117,7 +127,32 @@ const Header = () => {
   
     <div className="flex justify-center m-6">
         <Button colorScheme='teal' size='md' onClick={onOpen}>Postular empleo</Button>
+        
+        <div className="ml-6">
+            <Stack spacing={4}>
+                        <InputGroup>
+                        <InputLeftElement
+                            pointerEvents='none'
+                            children={<Lupa/>}
+                            />
+                    <Input type='tel' placeholder='Buscar un empleo...' />
+                </InputGroup>
+            </Stack>
+        </div>
+
+
         <Modal isOpen={isOpen} onClose={onClose}>
+              <Stack spacing={4}>
+                    <InputGroup>
+                    <InputLeftElement
+                        pointerEvents='none'
+                        
+                        />
+                <Input type='tel' placeholder='Buscar' />
+            </InputGroup>
+        </Stack>
+       
+      
             <ModalOverlay />
                 <ModalContent>
                     <ModalHeader>Postular un empleo</ModalHeader>
@@ -224,7 +259,7 @@ const Header = () => {
                             )}}
                         </Formik>                             
                     </ModalBody>
-
+                    
                     
                 </ModalContent>
         </Modal>
